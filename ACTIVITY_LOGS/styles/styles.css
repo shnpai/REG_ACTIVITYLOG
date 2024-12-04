@@ -1,0 +1,287 @@
+/* General body styles */
+body {
+    background-color: #EDE8DC; /* Background color */
+    color: #4a4a4a; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and text styles */
+h1, h2, h3 {
+    color: #C1CFA1;
+    text-align: center;
+}
+
+h1.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1.message.success {
+    background-color: ghostwhite;
+    border: 1px solid green;
+    color: green;
+}
+
+h1.message.error {
+    background-color: #FAD5D5;
+    border: 1px solid red;
+    color: red;
+}
+
+/* Form and input styles */
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="submit"], button {
+    border-radius: 5px; /* Rounded borders for all inputs */
+}
+
+/* Style for input fields */
+input[type="text"], input[type="password"], input[type="email"], input[type="search"] {
+    width: 100%; /* Full width but will be limited by form width */
+    max-width: 300px; /* Medium size input */
+    padding: 8px 12px; /* Slightly larger padding for readability */
+    font-size: 1em;
+    border: 1px solid #A5B68D;
+    background-color: white; /* White background for inputs */
+    margin: 10px 0; /* Proper margin for spacing */
+}
+
+/* Button styles */
+input[type="submit"], button {
+    width: auto; /* Just enough space for the text */
+    padding: 8px 16px;
+    background-color: #A5B68D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px 0; /* Spacing for buttons */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #C1CFA1;
+}
+
+/* Container for page layout */
+.container {
+    width: 80%; /* Limiting width for better alignment */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Login and registration form container */
+.login-form, .register-form {
+    background-color: #F1EBDA;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #A5B68D;
+}
+
+.login-form input[type="text"], .login-form input[type="password"], .register-form input[type="text"], .register-form input[type="password"] {
+    width: 100%;
+    max-width: 300px; /* Limiting input width */
+}
+
+/* Register Form Styles */
+.register {
+    border-style: solid;
+    width: 35%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #F1EBDA; /* Light Beige */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register h1 {
+    color: #A5B68D;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.register form p {
+    margin-bottom: 15px;
+}
+
+.register label {
+    font-weight: bold;
+    color: #333;
+}
+
+.register input[type="text"], .register input[type="password"], .register input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.register input[type="submit"] {
+    background-color: #A5B68D; /* Soft Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.register input[type="submit"]:hover {
+    background-color: #C1CFA1; /* Pale Green */
+}
+
+/* Message Styles */
+.message {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #F1EBDA;
+    border-collapse: collapse; /* Ensures table lines are visible */
+}
+
+th, td {
+    border: 1px solid #A5B68D; /* Table borders */
+    padding: 10px;
+}
+
+th {
+    background-color: #FAD5D5;
+}
+
+td {
+    background-color: #E7CCCC;
+}
+
+table a {
+    color: #A5B68D;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #C1CFA1;
+}
+.form-title {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+.form-input {
+    width: 100%;
+    padding: 50px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+.container {
+    width: 80%; /* Limiting width for better alignment */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #F1EBDA;
+    border-radius: 10px;
+    border: 1px solid #A5B68D;
+}
+
+.back-link {
+    font-size: 1.5em;
+    color: #A5B68D;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Notification messages */
+.notification {
+    padding: 10px;
+    background-color: #F1EBDA;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Aligning logout button at the right */
+.greeting h3 a {
+    font-size: 1em;
+    color: #A5B68D;
+    text-decoration: none;
+    float: right;
+    margin-right: 20px;
+}
+
+.greeting h3 a:hover {
+    color: #C1CFA1;
+}
+
+/* Links */
+a {
+    color: #A5B68D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E7CCCC;
+}
+
+.deleteBtn input[type="submit"] {
+    background-color: #FDE0DF; /* Pink background */
+    border: 1px solid #ccc; /* Border */
+    padding: 10px 20px;
+    color: #333; /* Text color */
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .login-form, .register-form {
+        width: 100%;
+    }
+
+    .search-form input[type="text"], .search-form input[type="submit"] {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.9em; /* Slightly smaller text in tables on smaller screens */
+    }
+}
